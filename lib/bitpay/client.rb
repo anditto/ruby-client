@@ -25,7 +25,7 @@ module BitPay
         @priv_key           = KeyUtils.get_private_key @key
         @pub_key            = KeyUtils.get_public_key @key
         @client_id          = KeyUtils.generate_sin_from_pem @pem
-        @uri                = URI.parse opts[:api_uri] || API_URI
+        @uri                = URI.parse opts[:api_uri].chomp("/") || API_URI
         @user_agent         = opts[:user_agent] || USER_AGENT
         @https              = Net::HTTP.new @uri.host, @uri.port
         @https.use_ssl      = true
