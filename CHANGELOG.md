@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.4.7] - 2015-12-07
+### Changed
+- Bug fixes.
+
+## [2.4.6] - 2018-11-30
+### Changed
+- Changed verification parameter to allow single satoshi units. Important for Lightning payments.
+
+## [2.4.5] - 2018-02-26
+### Changed
+- Added support for /invoices route with params.
+
 ## [2.4.4] - 2015-04-14
 ### Changed
 - Separated key utilities into its own Gem
